@@ -1,12 +1,14 @@
 # Bora pelo RS
 
+**Site publicado:** https://pedrobolson.github.io/bora-pelo-rs/
+
 Abra **index.html** no navegador. Não precisa instalar nada. O HTML contém o catálogo, os estilos, o Leaflet e uma base local com os municípios do RS. Para o mapa de ruas, ele carrega MapLibre e a base comunitária Maptoolkit pela internet. Alguns aplicativos de mensagens mostram uma prévia limitada de HTML; para usar no celular, prefira publicar um link.
 
-O carregamento foi corrigido para a abertura direta do arquivo (`file://`). O site usa agora a base comunitária Maptoolkit, sem chave, com os créditos exigidos. Não faz mais pedidos ao servidor de tiles que apresentava o bloqueio. Se a internet ou o recurso gráfico necessário à base de ruas falhar, o mapa continua mostrando os limites municipais do IBGE incorporados no HTML e os mesmos 70 pontos, sem inventar posições.
+O carregamento foi corrigido para a abertura direta do arquivo (`file://`). O site usa agora a base comunitária Maptoolkit, sem chave, com os créditos exigidos. Não faz mais pedidos ao servidor de tiles que apresentava o bloqueio. Se a internet ou o recurso gráfico necessário à base de ruas falhar, o mapa continua mostrando os limites municipais do IBGE incorporados no HTML e os mesmos 100 pontos.
 
 ## O que está incluído
 
-- 70 lugares identificados na conversa, em 20 municípios.
+- 100 lugares em 20 municípios: 70 recuperados da conversa e 30 acrescentados por pesquisa em 01/11/2026.
 - Mapa navegável com um marcador por lugar, nas coordenadas identificadas nas fontes de mapas.
 - Busca por nome, cidade, categoria e descrição, com ou sem acentos.
 - Filtros combinados por região, categoria e marcação pessoal.
@@ -17,6 +19,12 @@ O carregamento foi corrigido para a abertura direta do arquivo (`file://`). O si
 **As marcações são locais.** São guardadas no localStorage do navegador, por endereço do site. Não sincronizam entre aparelhos, navegadores ou entre você e sua esposa. Abrir outro arquivo ou mudar o endereço de hospedagem pode criar uma lista separada. Limpar os dados do navegador apaga as marcações. Se o navegador bloquear o armazenamento, o site informa que a seleção é temporária. Nenhuma marcação foi preenchida automaticamente com as opiniões relatadas na conversa.
 
 ## Cobertura recuperada e limitações
+
+Em 01/11/2026, o catálogo recebeu 30 adições nas regiões já abordadas: 10 em Uva e Vinho, 12 em Hortênsias e 8 em Campos e Paranhana. Foram mantidos os 70 registros anteriores e seus identificadores, preservando as marcações já salvas no mesmo navegador e endereço.
+
+O perfil continua incluindo natureza, cultura, aventura, parques e enoturismo. Cafés e restaurantes foram selecionados por uma experiência própria: almoço em casarão histórico, culinária familiar ou piquenique em pomar. Avaliações independentes apoiaram a escolha de Casa Vanni, Osteria Della Colombina, Castelinho Caracol e Casa Sander; seus cartões incluem links para consultar as opiniões atuais. Não há ranking nem notas automáticas. As descrições dos novos locais têm links para as fontes de informação.
+
+Essas inclusões são pesquisa complementar, identificada em cada cadastro. Não representam a recuperação dos lugares que faltavam na conversa original.
 
 O pedido original mencionava **222 pontos e nove regiões**. A leitura disponível da resposta foi cortada após o terceiro mapa. Foi possível recuperar **58 registros com nome nos mapas** e **12 lugares nomeados em outros trechos da mesma conversa**, incluindo todos os 25 lugares da seleção anterior. Não foram inventados os pontos restantes nem os nomes das seis regiões ausentes.
 
@@ -34,7 +42,9 @@ O arquivo **dados-recuperados.json** registra nomes, endereços, origem, coorden
 
 ## Como as coordenadas foram obtidas
 
-Os 70 lugares têm coordenadas de objetos cartográficos identificados no OpenStreetMap ou de pontos de atrações no Google Maps. Nas correspondências, foram conferidos nome, cidade e endereço quando disponível. Links de mapas publicados pela Secretaria de Turismo de Bento e sites oficiais também foram usados. **Não foram usados centros de municípios, deslocamentos artificiais ou coordenadas estimadas para preencher lacunas.**
+Os 100 lugares têm coordenadas de objetos cartográficos identificados no OpenStreetMap, links de localização ou mapas publicados por órgãos de turismo. Nas correspondências, foram conferidos nome, cidade e endereço quando disponível. Na ampliação, foram usados também os pontos do portal turístico de Igrejinha e o link de localização do restaurante Osteria Della Colombina no Tripadvisor, confrontado com seu site oficial. **Não foram usados centros de municípios, deslocamentos artificiais ou coordenadas estimadas para preencher lacunas.**
+
+As notas de posição distinguem a área da Floresta Nacional, o mirante da Cachoeira do Tigre Preto e a passagem do rio no Passo da Ilha das respectivas portarias ou áreas de apoio. Foram conferidos homônimos como o parque de esculturas Pedras do Silêncio, que é diferente do pico de mesmo nome, e o Santuário de Caravaggio de Farroupilha. O cadastro do Museu Casa de Pedra no MuseusBr apresentava coordenadas divergentes; foi usada a edificação identificada no OpenStreetMap. A Casa Sander tem diferença de número entre o mapa e o endereço oficial, registrada na nota do ponto.
 
 Foram distinguidos casos como Gasper Vale dos Vinhedos versus Eulália, a filial Santa Líbera da Monte Reale e o endereço atual do Xeque-Mate. O marcador da Maria Fumaça indica a estação de Bento; o da Cambará Off Road indica sua sede. Em atrativos naturais, a posição identifica o atrativo ou a área do parque e pode não ser uma portaria ou acesso para veículos. Não houve levantamento em campo; os dados cartográficos podem conter imprecisões. Não há informação de disponibilidade, preços ou horários em tempo real.
 
@@ -80,4 +90,4 @@ Isso publica os arquivos estáticos. Não adiciona sincronização das marcaçõ
 - Outras posições: Google Maps e links de localização publicados pelos estabelecimentos e órgãos de turismo, individualizados nos cartões e no JSON.
 - Ilustração: SVG original incluído no HTML, sem imagens externas.
 
-Preparado em 31/10/2026. Nenhum site foi publicado automaticamente nesta entrega.
+Base preparada em 31/10/2026. Catálogo ampliado em 01/11/2026 e publicado pelo GitHub Pages a partir da branch `main`.
