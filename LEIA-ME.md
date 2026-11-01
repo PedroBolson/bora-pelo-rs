@@ -2,7 +2,7 @@
 
 **Acesse:** https://pedrobolson.github.io/bora-pelo-rs/
 
-Catálogo com 96 lugares para passear pelo Rio Grande do Sul. Busque por nome, cidade ou experiência, combine os filtros de região, cidade e tipo de passeio e explore os pontos no mapa. Os três filtros usam dropdowns personalizados em CSS.
+Catálogo com 85 lugares para passear pelo Rio Grande do Sul. Busque por nome, cidade ou experiência, combine os filtros de região, cidade e tipo de passeio e explore os pontos no mapa. Os três filtros usam dropdowns personalizados em CSS.
 
 Use **Quero ir**, **Já fui** e **Não gostei** para organizar suas escolhas. Tocar novamente na mesma marcação remove a seleção. As marcações ficam salvas no navegador e não sincronizam entre aparelhos. Limpar os dados do navegador apaga essas escolhas.
 
